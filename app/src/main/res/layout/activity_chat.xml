@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.bluetoothdemo.ChatActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/child1"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="2dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/child1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0.5dp">
+
+        <EditText
+            android:id="@+id/edtmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnsend"
+            android:layout_alignTop="@+id/btnsend"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="88.5dp"
+            android:background="@drawable/round_corner_border"
+            android:hint="@string/enter_your_message"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnsend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/round_corner_border"
+            android:text="@string/send" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
